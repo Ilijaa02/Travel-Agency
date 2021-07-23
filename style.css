@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header::before{
+    display: block;
+    content: '';
+    height: 200px;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(15, 15, 15, 0.6),rgba(19, 19, 19, 0.6)),url(imgs/bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+    background: white;
+}
+
+.navbar .navbar-brand{
+    font-size: 30px;
+}
+
+.navbar {
+    font-size: 18px;
+}
+
+header .input-group .input-group-append .btn{
+    width: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+}
+
+header .input-group .form-control{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+header h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+.card .img{
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background-position: center;
+    background-size: cover;
+}
+
+#paris{
+    background-image: url('imgs/paris.jpg')
+}
+
+#tajmahal{
+    background-image: url('imgs/tadzmahal.jpg')
+}
+
+#egypt{
+    background-image: url('imgs/egypt.jpg')
+}
+
+.overlay-price{
+    position: absolute;
+    bottom: -15px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.overlay-rating{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.gallery{
+    background: rgb(233, 233, 233);
+}
+
+.container .row .card{
+    border-radius: 10px
+}
+
+.card .img{
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery-box{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.gallery-box-text{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 0;
+    font-family: 'Dancing Script', cursive;
+    transition: 0.7s;
+}
+
+.gallery-box:hover .gallery-box-text{
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.gallery-box:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.gallery-item{
+    overflow: hidden;
+}
+
+#img1{
+    background-image: url('imgs/paris.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+}
+
+#img2{
+    background-image: url('imgs/egypt.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+}
+
+#img3{
+    background-image: url('imgs/tadzmahal.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+}
+
+#img4{
+    background-image: url('imgs/bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+}
+
+footer{
+    background-image: linear-gradient(#141e30 , #243b55);
+}
+
+.heart{
+    color: red;
+}
